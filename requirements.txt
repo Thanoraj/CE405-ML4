@@ -1,0 +1,4 @@
+pygrnn
+streamlit
+numpy
+joblib
