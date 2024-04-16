@@ -4,7 +4,7 @@ import joblib
 from hpelm import ELM
 
 # Assuming your model and scaler are already saved in the specified paths
-model_path = "elm_model"
+model_path = ".elm_model"
 scaler_path = "../scaler.pkl"
 
 elm = ELM(5, 1)  # Number of features and output dimension
