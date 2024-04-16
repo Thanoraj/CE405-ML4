@@ -2,3 +2,4 @@ pygrnn
 streamlit
 numpy
 joblib
+hpelm
