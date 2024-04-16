@@ -10,6 +10,8 @@ scaler_path = "../scaler.pkl"
 elm = ELM(5, 1)  # Number of features and output dimension
 elm.add_neurons(5, "sigm")  # Number of neurons and type of activation function
 #
+
+print(model_path)
 # Load your trained model and scaler
 loaded_model = ELM.load(elm, model_path)
 loaded_scaler = joblib.load(scaler_path)
