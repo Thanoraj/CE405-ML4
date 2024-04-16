@@ -5,7 +5,7 @@ from hpelm import ELM
 import os
 
 # Assuming your model and scaler are already saved in the specified paths
-model_path = "./elm_model"
+model_path = "elm_model"
 scaler_path = "scaler.pkl"
 
 print(os.path.exists(model_path))
