@@ -8,6 +8,7 @@ model_path = "elm_model"
 scaler_path = "../scaler.pkl"
 
 # Load your trained model and scaler
+print(model_path)
 loaded_model = ELM.load(model_path)
 loaded_scaler = joblib.load(scaler_path)
 
