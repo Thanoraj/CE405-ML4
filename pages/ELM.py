@@ -5,7 +5,7 @@ from hpelm import ELM
 
 # Assuming your model and scaler are already saved in the specified paths
 model_path = "../elm_model"
-scaler_path = "scaler.pkl"
+scaler_path = "../scaler.pkl"
 
 # Load your trained model and scaler
 loaded_model = ELM.load(model_path)
