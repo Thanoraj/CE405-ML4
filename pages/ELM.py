@@ -8,7 +8,7 @@ import os
 model_path = "elm_model"
 scaler_path = "../scaler.pkl"
 
-print(os.path.exist(model_path))
+print(os.path.exists(model_path))
 elm = ELM(5, 1)  # Number of features and output dimension
 elm.add_neurons(5, "sigm")  # Number of neurons and type of activation function
 #
