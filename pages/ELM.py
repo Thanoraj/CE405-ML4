@@ -24,8 +24,7 @@ def predict_with_elm(X_new):
     """Function to predict PAC using the loaded model and scaler."""
     X_scaled = loaded_scaler.transform(X_new)
     y_pred = elm.predict(X_scaled)
-    print(y_pred)
-    return y_pred
+    return y_pred[0]
 
 
 # Streamlit app layout
