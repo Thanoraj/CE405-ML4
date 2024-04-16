@@ -16,14 +16,14 @@ elm.add_neurons(5, "sigm")  # Number of neurons and type of activation function
 
 print(model_path)
 # Load your trained model and scaler
-loaded_model = ELM.load(elm, model_path)
+elm.load(model_path)
 loaded_scaler = joblib.load(scaler_path)
 
 
 def predict_with_elm(X_new):
     """Function to predict PAC using the loaded model and scaler."""
     X_scaled = loaded_scaler.transform(X_new)
-    y_pred = loaded_model.predict(X_scaled)
+    y_pred = elm.predict(X_scaled)
     return y_pred
 
 
