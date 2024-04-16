@@ -2,11 +2,13 @@ import streamlit as st
 import numpy as np
 import joblib
 from hpelm import ELM
+import os
 
 # Assuming your model and scaler are already saved in the specified paths
-model_path = ".elm_model"
+model_path = "elm_model"
 scaler_path = "../scaler.pkl"
 
+print(os.path.exist(model_path))
 elm = ELM(5, 1)  # Number of features and output dimension
 elm.add_neurons(5, "sigm")  # Number of neurons and type of activation function
 #
